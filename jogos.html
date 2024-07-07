@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Astronomia</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/estilo.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Itim&display=swap">
+    <script src="script/forca.js" defer></script>
+</head>
+<body>
+    <div class="main">
+        <div class="header">
+            <img src="img/astronaut_1751809.png" alt="Ícone">
+            <p>Seja bem vindo a uma aventura por nossa galáxia!</p>
+        </div>
+        <button class="menu-button" onclick="toggleMenu()">Menu</button>
+
+        <!-- Menu de navegação -->
+        <div class="menus">
+            <button onclick="window.location.href='index.html'" id="home">Menu</button>
+            <button onclick="window.location.href='constelacoes.html'" id="constelacoes">Constelações</button>
+            <button onclick="window.location.href='planetas.html'" id="planetas">Planetas</button>
+            <button onclick="window.location.href='satelites.html'" id="satelites">Satélites</button>
+            <button onclick="window.location.href='outros.html'" id="outros">Outros</button>
+            <button onclick="window.location.href='jogos.html'" id="jogos" style="background-image: linear-gradient(to bottom, #33323B, #777488)">Quizz</button>
+        </div>
+
+        <nav class="dropdown" id="dropdownMenu">
+            <div class="navbar_button">&#9776;</div>
+            <ul class="navbar_links">
+                <li><a href="#" onclick="navigateTo('index.html')">Menu</a></li>
+                <li><a href="#" onclick="navigateTo('constelacoes.html')">Constelações</a></li>
+                <li><a href="#" onclick="navigateTo('planetas.html')">Planetas</a></li>
+                <li><a href="#" onclick="navigateTo('satelites.html')">Satélites</a></li>
+                <li><a href="#" onclick="navigateTo('outros.html')">Outros</a></li>
+                <li><a href="#" onclick="navigateTo('jogos.html')">Quizz</a></li>
+            </ul>
+        </nav>
+
+        <div class="content">
+            <div class="box">
+                <h1>Jogo da Forca</h1>
+                <div id="difficulty-buttons">
+                    <button onclick="startGame('facil')">Fácil</button>
+                    <button onclick="startGame('medio')">Médio</button>
+                    <button onclick="startGame('dificil')">Difícil</button>
+                </div>
+                <div>
+                    <p>Dica: <span id="dica"></span></p>
+                </div>
+                <div id="canvas-container">
+                    <canvas id="canvas" width="200" height="200"></canvas>
+                </div>
+                <div id="word-container">
+                    <p id="palavra"></p>
+                </div>
+                <div id="letters-container"></div>
+                <p id="chances">Chances restantes: <span id="chances-count">6</span></p>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">
+        &copy; Desenvolvido por Julia de Oliveira Dias - 2024
+    </div>
+</body>
+</html>

@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <title>Astronomia</title>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/estilo.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Itim&display=swap">
+        <script src="script/script.js" defer></script>
+
+    </head>
+    
+    <body>
+        <div class="main">
+            <div class="header">
+                <img src="img/astronaut_1751809.png" alt="Ícone">
+                <p>Seja bem vindo a uma aventura por nossa galáxia!</p>
+                
+            </div>
+            <button class="menu-button" onclick="toggleMenu()">Menu</button>
+
+            <div class="menus">
+                <button onclick="window.location.href='index.html'" id="home" >Menu</button>
+                <button onclick="window.location.href='constelacoes.html'" id="constelacoes">Constelações</button>
+                <button onclick="window.location.href='planetas.html'" id="planetas">Planetas</button>
+                <button onclick="window.location.href='satelites.html'" id="satelites">Satélites</button>
+                <button onclick="window.location.href='outros.html'" id="outros" style="background-image: linear-gradient(to bottom, #33323B, #777488)">Outros</button>
+                <button onclick="window.location.href='jogos.html'" id="jogos" >Quizz</button>
+            </div>
+    
+            <nav class="dropdown" id="dropdownMenu">
+                <div class="navbar_button">&#9776;</div>
+                <ul class="navbar_links">
+                    <li><a href="#" onclick="navigateTo('index.html')">Menu</a></li>
+                    <li><a href="#" onclick="navigateTo('constelacoes.html')">Constelações</a></li>
+                    <li><a href="#" onclick="navigateTo('planetas.html')">Planetas</a></li>
+                    <li><a href="#" onclick="navigateTo('satelites.html')">Satélites</a></li>
+                    <li><a href="#" onclick="navigateTo('outros.html')">Outros</a></li>
+                    <li><a href="#" onclick="navigateTo('jogos.html')">Quizz</a></li>
+                </ul>
+            </nav>
+            
+
+            <div class="content">
+                <div class="box">
+                    <h4>Conceitos no Espaço</h4>
+                    <p>
+                        No vasto domínio do espaço, encontramos uma miríade de conceitos fascinantes e intrigantes que desafiam nossa compreensão. Desde a teoria da relatividade de Einstein até os buracos negros e a expansão do universo, os conceitos do espaço nos levam a explorar os limites do conhecimento humano.                      
+                    </p>
+                    <h4>Fenômenos Espaciais</h4>
+                    <p>
+                        O espaço é o palco de uma infinidade de fenômenos extraordinários, desde supernovas explosivas até colisões cósmicas. Esses eventos cósmicos moldam nosso universo e nos fornecem insights cruciais sobre sua natureza e evolução.                         
+                    </p>
+                    <h4>Explorando o Espaço</h4>
+                    <p>
+                        A exploração espacial representa a busca contínua da humanidade por compreender o universo que nos cerca. Desde as primeiras missões tripuladas à Lua até as sondas interplanetárias que investigam os confins do sistema solar, a exploração espacial nos permite alcançar novos horizontes e desvendar os segredos do cosmos.                        
+                    </p>
+                    <h4>Teorias Cósmicas</h4>
+                    <p>
+                        As teorias cósmicas são tentativas de explicar os fenômenos observados no universo, desde a origem do universo até a natureza da matéria escura. Da teoria do Big Bang à hipótese das cordas, essas estruturas conceituais moldam nossa compreensão do cosmos.
+                    </p>
+                    <h4>Equipamentos Astronômicos</h4>
+                    <p>
+                        Para explorar o espaço, os astrônomos contam com uma variedade de equipamentos avançados, como telescópios terrestres e espaciais, radiotelescópios e observatórios espaciais. Essas ferramentas fornecem insights cruciais sobre os objetos celestes distantes e os fenômenos cósmicos.
+                    </p>
+                    <h4>Relações Espaciais</h4>
+                    <p>
+                        O espaço está repleto de conexões complexas e interações entre os objetos celestes. Desde as órbitas dos planetas até as interações gravitacionais entre as estrelas, as relações espaciais desempenham um papel fundamental na dinâmica do universo.
+                    </p>
+                    <h4>Unidades de Medida no Espaço</h4>
+                    <p>
+                        Para descrever as vastas escalas do universo, os astrônomos recorrem a unidades de medida especiais, como anos-luz, parsecs e unidades astronômicas. Essas unidades permitem uma compreensão mais clara das distâncias cósmicas e das dimensões celestiais.
+                    </p>
+                    <h4>Lugares no Cosmos</h4>
+                    <p>
+                        Do núcleo galáctico às nebulosas interestelares, o espaço está repleto de uma miríade de locais intrigantes e diversos. Cada lugar no cosmos oferece uma perspectiva única sobre os processos cósmicos e os objetos celestes que os habitam.
+                    </p>
+                    <h4>Radiação no Espaço</h4>
+                    <p>
+                        A radiação é uma característica onipresente do espaço, desde a luz estelar até os raios cósmicos e a radiação de fundo do universo. Essa radiação fornece informações valiosas sobre a composição e a evolução do cosmos.
+                    </p>
+                    <h4>Galáxias e sua Diversidade</h4>
+                    <p>
+                        As galáxias são as estruturas fundamentais do universo, abrigando bilhões de estrelas, planetas e outros objetos celestes. Desde espirais majestosas até elípticas difusas, a diversidade de galáxias oferece uma visão fascinante da vastidão do cosmos.
+                    </p>
+                    <h4>Campo Magnético Cósmico</h4>
+                    <p>
+                        O campo magnético desempenha um papel crucial na estruturação e na evolução do universo. Desde os campos magnéticos estelares até as magnetosferas planetárias, essas forças invisíveis moldam o ambiente espacial e influenciam os fenômenos cósmicos.
+                    </p>
+                    <h4>Asteroides e seu Papel no Sistema Solar</h4>
+                    <p>
+                        Os asteroides são os pequenos corpos rochosos que orbitam o Sol, muitos dos quais residem no cinturão de asteroides entre Marte e Júpiter. Esses objetos celestes desempenham um papel importante na formação e na evolução do sistema solar, além de representarem uma fonte de riqueza potencial para a exploração espacial futura.
+                    </p>
+
+                    <div>
+                        <button onclick="window.open('https://segredosdomundo.r7.com/fenomenos-do-espaco/', '_blank')" id="fenomenos">Veja 15 fenômenos do espaço</button>
+                        <button onclick="window.open('https://www.tecmundo.com.br/ciencia/282197-ceu-noturno-identificar-cometas-asteroides.htm', '_blank')" id="curiosastdd">O céu noturno: como identificar cometas e asteroides?</button>
+                        <button onclick="window.open('https://oglobo.globo.com/mundo/epoca/noticia/2024/03/29/descoberta-cosmica-saiba-mais-sobre-o-campo-magnetico-visto-em-torno-do-buraco-negro-central-da-via-lactea.ghtml/', '_blank')" id="88const">saiba mais sobre o campo magnético visto em torno do buraco negro central da Via Láctea</button>
+                    </div>
+
+                </div>
+                
+                 
+            </div>
+        </div>
+
+        <div class="footer">
+            &copy; Desenvolvido por Julia de Oliveira Dias - 2024
+        </div>
+    </body>
+</html>

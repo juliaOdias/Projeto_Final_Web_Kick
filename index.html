@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <title>Astronomia</title>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/estilo.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Itim&display=swap">
+        <script src="script/index.js" defer></script>
+
+    </head>
+    
+    <body>
+        <div class="main">
+            <div class="header">
+                <img src="img/astronaut_1751809.png" alt="Ícone">
+                <p>Seja bem vindo a uma aventura por nossa galáxia!</p>
+                
+            </div>
+            <button class="menu-button" onclick="toggleMenu()">Menu</button>
+
+            <!-- Menu de navegação -->
+            <div class="menus">
+                <button onclick="window.location.href='index.html'" id="home" style="background-image: linear-gradient(to bottom, #33323B, #777488)">Menu</button>
+                <button onclick="window.location.href='constelacoes.html'" id="constelacoes">Constelações</button>
+                <button onclick="window.location.href='planetas.html'" id="planetas">Planetas</button>
+                <button onclick="window.location.href='satelites.html'" id="satelites">Satélites</button>
+                <button onclick="window.location.href='outros.html'" id="outros">Outros</button>
+                <button onclick="window.location.href='jogos.html'" id="jogos" >Quizz</button>
+            </div>
+
+
+            <nav class="dropdown" id="dropdownMenu">
+                <div class="navbar_button">&#9776;</div>
+                <ul class="navbar_links">
+                    <li><a href="#" onclick="navigateTo('index.html')">Menu</a></li>
+                    <li><a href="#" onclick="navigateTo('constelacoes.html')">Constelações</a></li>
+                    <li><a href="#" onclick="navigateTo('planetas.html')">Planetas</a></li>
+                    <li><a href="#" onclick="navigateTo('satelites.html')">Satélites</a></li>
+                    <li><a href="#" onclick="navigateTo('outros.html')">Outros</a></li>
+                    <li><a href="#" onclick="navigateTo('jogos.html')">Quizz</a></li>
+                </ul>
+            </nav>
+    
+            
+
+            <div class="content">
+                
+                <div class="box">
+                    
+                    <p>
+                        Embarque conosco numa jornada fascinante pelo nosso lar cósmico, a Via Láctea. Aqui, você encontrará um universo de informações sobre os encantadores planetas, as misteriosas constelações, os diversos satélites naturais e artificiais que orbitam nosso espaço, além de lendas que têm intrigado a humanidade através dos séculos.
+                    </p>
+                    <p>
+                        Você sabia que Júpiter tem tempestades maiores que a Terra? 
+                    </p>
+                    <p>
+                        Descubra curiosidades espaciais, explore locais terrestres dedicados à astronomia e aventure-se em uma experiência única visualizando o espaço em tempo real. Seja você um aficionado por astronomia ou simplesmente curioso sobre o cosmos, há algo aqui para todos.
+                    </p>
+                    <p>
+                        Prepare-se para expandir seus horizontes. Continue conosco e desvende os segredos do universo!
+                    </p>
+
+                </div>
+                
+                <div class="container">
+                    <div class="fade">
+                        <div class="n_text"> 1 / 4 </div>
+                        <img src="img/carrossel1.JPG">
+                        <a href="satelites.html" class="button">Satélites</a>
+                    </div>
+                    
+                    <div class="fade">
+                        <div class="n_text"> 2 / 4 </div>
+                        <img src="img/carrossel2.JPG">
+                        <a href="constelacoes.html" class="button">Constelações</a>
+                    </div>
+                    
+                    <div class="fade">
+                        <div class="n_text"> 3 / 4 </div>
+                        <img src="img/carrossel 3.JPG">
+                        <a href="planetas.html" class="button">Planetas</a>
+                    </div>
+
+                    <div class="fade">
+                        <div class="n_text"> 4 / 4 </div>
+                        <img src="img/carrossel 4.JPG">
+                        <a href="outros.html" class="button">Outros</a>
+                    </div>
+        
+                    <a class="prev" onclick="plus_slides(-1)"> &#10094; </a>
+                    <a class="next" onclick="plus_slides(1)"> &#10095; </a>
+                </div>
+        
+                <div class="dot_box">
+                    <span class="dot" onclick="current_slides(1)"></span>
+                    <span class="dot" onclick="current_slides(2)"></span>
+                    <span class="dot" onclick="current_slides(3)"></span>
+                    <span class="dot" onclick="current_slides(4)"></span>
+                </div>
+                
+                  
+                <div class="box">
+                    <h2> Top 3 curiosidades</h2>
+                    <ul>
+                        <li>
+                            Buracos Negros Supermassivos: No centro de muitas galáxias, incluindo a nossa Via Láctea, existem buracos negros supermassivos. Esses gigantes cósmicos podem ter massas bilhões de vezes maiores que a do Sol e exercem uma forte influência sobre as estrelas e o material ao seu redor. Estudar esses buracos negros ajuda os cientistas a entenderem a formação e a evolução das galáxias.
+                        </li>
+                        <li>
+                            Estrelas de Nêutrons: Estrelas de nêutrons são remanescentes extremamente densos de estrelas massivas que colapsaram em si mesmas após uma supernova. Elas são incrivelmente pequenas em tamanho, mas possuem uma massa massiva. Uma colher de chá de matéria de uma estrela de nêutrons teria uma massa de bilhões de toneladas. Estrelas de nêutrons também possuem campos magnéticos extremamente poderosos e emitem pulsos de radiação, sendo conhecidas como pulsares.
+                        </li>
+                        <li>
+                            Nebulosas: Nebulosas são vastas nuvens de gás e poeira no espaço, onde novas estrelas nascem e outras morrem. Elas vêm em diferentes formas e cores e são algumas das estruturas mais belas do universo. Um exemplo famoso é a Nebulosa da Águia, onde as estrelas jovens estão esculpindo formas impressionantes na nebulosa com sua radiação intensa.
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer">
+            &copy; Desenvolvido por Julia de Oliveira Dias - 2024
+        </div>
+    </body>
+</html>

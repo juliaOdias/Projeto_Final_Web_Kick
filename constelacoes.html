@@ -1,0 +1,117 @@
+<html lang="en">
+    <head>
+        <title>Astronomia</title>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/estilo.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Itim&display=swap">
+        <script src="script/script.js" defer></script>
+
+    </head>
+    
+    <body>
+        <div class="main">
+            <div class="header">
+                <img src="img/astronaut_1751809.png" alt="Ícone">
+                <p>Seja bem vindo a uma aventura por nossa galáxia!</p>
+                
+            </div>
+
+            <button class="menu-button" onclick="toggleMenu()">Menu</button>
+
+            <div class="menus">
+                <button onclick="window.location.href='index.html'" id="home" >Menu</button>
+                <button onclick="window.location.href='constelacoes.html'" id="constelacoes" style="background-image: linear-gradient(to bottom, #33323B, #777488)">Constelações</button>
+                <button onclick="window.location.href='planetas.html'" id="planetas">Planetas</button>
+                <button onclick="window.location.href='satelites.html'" id="satelites">Satélites</button>
+                <button onclick="window.location.href='outros.html'" id="outros">Outros</button>
+                <button onclick="window.location.href='jogos.html'" id="jogos">Quizz</button>
+
+            </div>
+            
+
+            <nav class="dropdown" id="dropdownMenu">
+                <div class="navbar_button">&#9776;</div>
+                <ul class="navbar_links">
+                    <li><a href="#" onclick="navigateTo('index.html')">Menu</a></li>
+                    <li><a href="#" onclick="navigateTo('constelacoes.html')">Constelações</a></li>
+                    <li><a href="#" onclick="navigateTo('planetas.html')">Planetas</a></li>
+                    <li><a href="#" onclick="navigateTo('satelites.html')">Satélites</a></li>
+                    <li><a href="#" onclick="navigateTo('outros.html')">Outros</a></li>
+                    <li><a href="#" onclick="navigateTo('jogos.html')">Quizz</a></li>
+                </ul>
+            </nav>
+            
+
+            <div class="content">
+                <div class="const_img">
+                    <img src="img/7249582_30970.jpg">
+                </div>
+                <div class="box">
+                    
+                    <p>
+                        A prática de identificar constelações pode ser rastreada até a pré-história, 
+                        onde as primeiras civilizações usavam as estrelas para orientação durante viagens noturnas 
+                        e para marcar as mudanças das estações. Por exemplo, os antigos navegadores usavam as 
+                        constelações para navegar pelos oceanos. A constelação mais conhecida, Ursa Maior, contém 
+                        o "Ponteiro Norte", duas estrelas que apontam diretamente para a Estrela Polar, crucial para 
+                        a navegação no hemisfério norte.                    
+                    </p>
+                    <p>
+                        Cada civilização teve suas próprias constelações, muitas vezes atribuindo-lhes significados 
+                        relacionados à sua mitologia e religião. Os gregos, por exemplo, codificaram muitas das 
+                        constelações conhecidas hoje, como Orion, o caçador, e Leo, o leão. Os babilônios, por sua vez,
+                        deixaram registros de constelações que datam de mais de 3.000 anos.
+                    </p>
+                    <h4>A Astronomia Moderna e as 88 Constelações</h4>
+                    <p>
+                        Com o advento da astronomia moderna, as constelações foram padronizadas. Em 1922, a União 
+                        Astronômica Internacional (IAU) dividiu oficialmente o céu em 88 constelações com limites 
+                        precisos, cobrindo todo o céu noturno. Essa padronização facilita a comunicação e localização 
+                        de fenômenos astronômicos entre astrônomos ao redor do mundo.                   
+                    </p>
+                    <h4>Ciência nas Estrelas</h4>
+                    <p>
+                        Além do seu valor histórico e cultural, as constelações servem a um propósito científico importante. 
+                        Astrônomos usam as constelações como uma maneira de organizar e catalogar estrelas, galáxias, e 
+                        outros objetos celestes. Por exemplo, a estrela Alpha Centauri, a mais próxima do nosso sistema solar, 
+                        localiza-se na constelação de Centauro.                         
+                    </p> 
+                    <p>
+                        As constelações também são essenciais no estudo de objetos do espaço profundo. Telescópios apontam para 
+                        regiões específicas do céu definidas por constelações para observar galáxias e nebulosas distantes, 
+                        aprofundando nosso entendimento sobre a formação e evolução do universo.
+                    </p>
+                    <h4>Fascínio Cultural e Continuação do Legado</h4>
+                    <p>
+                        O fascínio pelas constelações também continua a influenciar as artes e a literatura, servindo como uma 
+                        fonte de inspiração para poetas, escritores e artistas. Histórias baseadas em figuras mitológicas e 
+                        lendas estelares são perpetuadas em obras culturais, mantendo viva a riqueza das interpretações celestes 
+                        das antigas civilizações.    
+                    </p>
+                    <p>
+                        Em resumo, as constelações não são apenas conjuntos de estrelas; elas são uma ponte entre o passado e o 
+                        presente, entre a ciência e a mitologia, e entre o céu e a Terra. Continuam a desempenhar um papel crucial 
+                        na navegação, na ciência e na cultura, capturando a imaginação de todos aqueles que olham para o céu noturno 
+                        e se perguntam sobre o universo e nosso lugar dentro dele.
+                    </p>
+                    <div>
+                        <button onclick="window.open('https://teacherdeniseselmo.wordpress.com/2021/01/09/as-88-constelacoes/', '_blank')" id="88const">Veja quais são as 88 constelações</button>
+                        <button onclick="window.open('https://segredosdomundo.r7.com/estrelas/', '_blank')" id="curiosconst">Curiosidades sobre constelações</button>
+                        <button onclick="window.open('https://tecnoblog.net/guias/6-aplicativos-para-ver-estrelas-e-outros-planetas/', '_blank')" id="88const">Aplicativo para buscar constelações no céu</button>
+                    </div>
+
+
+                </div>
+                
+                 
+            </div>
+        </div>
+
+        <div class="footer">
+            &copy; Desenvolvido por Julia de Oliveira Dias - 2024
+        </div>
+    </body>
+</html>

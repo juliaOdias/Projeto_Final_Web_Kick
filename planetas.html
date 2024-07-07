@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <title>Astronomia</title>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/estilo.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Itim&display=swap">
+        <script src="script/script.js" defer></script>
+
+    </head>
+    
+    <body>
+        <div class="main">
+            <div class="header">
+                <img src="img/astronaut_1751809.png" alt="Ícone">
+                <p>Seja bem vindo a uma aventura por nossa galáxia!</p>
+                
+            </div>
+            <button class="menu-button" onclick="toggleMenu()">Menu</button>
+
+            <div class="menus">
+                <button onclick="window.location.href='index.html'" id="home" >Menu</button>
+                <button onclick="window.location.href='constelacoes.html'" id="constelacoes">Constelações</button>
+                <button onclick="window.location.href='planetas.html'" id="planetas" style="background-image: linear-gradient(to bottom, #33323B, #777488)">Planetas</button>
+                <button onclick="window.location.href='satelites.html'" id="satelites">Satélites</button>
+                <button onclick="window.location.href='outros.html'" id="outros">Outros</button>
+                <button onclick="window.location.href='jogos.html'" id="jogos" >Quizz</button>
+            </div>
+    
+            <nav class="dropdown" id="dropdownMenu">
+                <div class="navbar_button">&#9776;</div>
+                <ul class="navbar_links">
+                    <li><a href="#" onclick="navigateTo('index.html')">Menu</a></li>
+                    <li><a href="#" onclick="navigateTo('constelacoes.html')">Constelações</a></li>
+                    <li><a href="#" onclick="navigateTo('planetas.html')">Planetas</a></li>
+                    <li><a href="#" onclick="navigateTo('satelites.html')">Satélites</a></li>
+                    <li><a href="#" onclick="navigateTo('outros.html')">Outros</a></li>
+                    <li><a href="#" onclick="navigateTo('jogos.html')">Quizz</a></li>
+                </ul>
+            </nav>
+            
+
+            <div class="content">
+                <div class="const_img">
+                    <img src="img/4005076_14637.jpg">
+                </div>
+                <div class="box">
+                    
+                    <p>
+                        O nosso sistema solar é uma coleção complexa e dinâmica de planetas, 
+                        cada um com suas características únicas e intrigantes. Desde a sua formação, 
+                        há cerca de 4,6 bilhões de anos, estes corpos celestes oferecem um vislumbre 
+                        da vastidão e da variedade do universo. Vamos embarcar em uma viagem detalhada por 
+                        cada um dos planetas que orbitam o nosso Sol.                    
+                    </p>
+                    <h4>Mercúrio</h4>
+                    <p>
+                        O planeta mais próximo do Sol, é também o menor do sistema solar. 
+                        Com uma superfície cheia de crateras, muito semelhante à Lua, Mercúrio enfrenta 
+                        as maiores variações de temperatura, oscilando entre extremos que podem atingir 430°C 
+                        durante o dia e -180°C à noite. Este pequeno gigante rochoso gira lentamente sobre seu eixo, 
+                        resultando em dias e noites que duram o equivalente a 176 dias terrestres.                         
+                    </p>
+                    <h4>Vênus</h4>
+                    <p>
+                        Conhecido como a estrela da manhã ou do entardecer devido ao seu brilho intenso, 
+                        é envolto em uma espessa camada de nuvens de ácido sulfúrico que reflete a luz solar. 
+                        Com temperaturas superficiais que excedem os 470°C, devido a um efeito estufa descontrolado, 
+                        Vênus é mais quente até mesmo que Mercúrio. Sua atmosfera é tão densa que a pressão atmosférica 
+                        na superfície é 92 vezes maior que a da Terra.                          
+                    </p>
+                    <h4>Terra</h4>
+                    <p>
+                        A Terra, nosso lar, é o terceiro planeta a partir do Sol e o único lugar no universo onde sabemos
+                        com certeza que existe vida. A Terra é única devido à sua atmosfera respirável, vastos oceanos de 
+                        água líquida e um campo magnético protetor que desvia as partículas solares perigosas.                        
+                    </p>
+                    <h4>Marte</h4>
+                    <p>
+                        O planeta vermelho, tem sido o foco de muitas missões de exploração devido a indícios de água 
+                        passada e potencial para vida. Com gigantescas tempestades de areia, calotas polares de gelo e o maior 
+                        vulcão do sistema solar, o Monte Olympus, Marte apresenta um terreno diversificado que continua a fascinar 
+                        cientistas e entusiastas do espaço.
+                    </p>
+                    <h4>Júpiter</h4>
+                    <p>
+                        O gigante gasoso, é o maior planeta do nosso sistema solar. Sua característica mais notável é a 
+                        Grande Mancha Vermelha, uma tempestade maior que a Terra que dura há centenas de anos. Júpiter é composto 
+                        principalmente por hidrogênio e hélio, e sua massa é tão imensa que quase se tornou uma estrela.
+                    </p>
+                    <h4>Saturno</h4>
+                    <p>
+                        Saturno é talvez o mais esteticamente agradável de todos os planetas, famoso por seus impressionantes anéis. 
+                        Esses anéis são compostos por milhões de partículas de gelo, rocha e poeira. Saturno é quase tão grande quanto 
+                        Júpiter e tem uma densidade tão baixa que, se houvesse um oceano grande o suficiente, ele flutuaria.
+                    </p>
+                    <h4>Urano e Netuno</h4>
+                    <p>
+                        Os gigantes de gelo, são os mais distantes. Urano é único porque gira deitado em relação ao plano 
+                        do sistema solar, possivelmente devido a uma colisão titânica durante sua formação. Netuno, apesar de ser o planeta 
+                        mais distante do Sol, tem ventos extremamente rápidos e uma bela coloração azul, graças à presença de metano em sua 
+                        atmosfera.
+                    </p>
+                    <div>
+                        <button onclick="window.open('https://www.dentrodahistoria.com.br/blog/educacao/curiosidades-planetas-sistema-solar/', '_blank')" id="88const">20 curiosidades sobre o Sistema Solar</button>
+                        <button onclick="window.open('https://www.youtube.com/watch?v=Gr34aHo9VEc', '_blank')" id="curiosconst">Os planetas, o Sol, Características e Curiosidades</button>
+                        <button onclick="window.open('https://mundoeducacao.uol.com.br/geografia/planetas.htm', '_blank')" id="88const">3
+                            Home  Geografia  Planetas do Sistema Solar
+                            Planetas do Sistema Solar</button>
+                    </div>
+
+                </div>
+                
+                 
+            </div>
+        </div>
+
+        <div class="footer">
+            &copy; Desenvolvido por Julia de Oliveira Dias - 2024
+        </div>
+    </body>
+</html>
