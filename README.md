@@ -1,4 +1,6 @@
 🌌 Projeto Final - Kick: Desenvolvimento Web / Final Project - Kick: Web Development
+<img width="1342" height="632" alt="image" src="https://github.com/user-attachments/assets/ed94e672-2d1a-4dd0-87d4-09ded230775a" />
+
 🇧🇷 Português
 💡 Sobre o Projeto
 
